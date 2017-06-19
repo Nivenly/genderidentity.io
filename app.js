@@ -9,4 +9,4 @@ app.use(express.static(path.join(__dirname, 'public')))
 function puts(error, stdout, stderr) { sys.puts(stdout) }
 exec("jekyll build --source jekyll --destination public --watch", puts);
 
-app.listen(3000)
+app.listen(80)
