@@ -7,10 +7,7 @@ WORKDIR /usr/src/app
 # Install app dependencies
 COPY package.json yarn.lock /usr/src/app/
 RUN yarn
-RUN gem install jekyll
-# RUN gem install bundler
-# RUN gem install minima
-# RUN gem install jekyll-feed
+RUN gem install jekyll jekyll-paginate-v2 jekyll-paginate jekyll-sitemap jekyll-gist jekyll-feed jemoji
 
 # Bundle app source
 COPY . /usr/src/app
