@@ -10,6 +10,8 @@ header:
   caption: "This is a big, furry creature."
 excerpt: "This is not bacon ipsum, but it smells like it."
 sidebar_type: support
+sidebar:
+  nav: support
 author_profile: false
 ---
 

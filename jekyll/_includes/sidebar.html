@@ -23,22 +23,30 @@
 {% endif %}
 
 {% if page.sidebar_type == "support" %}
-  <div class="sidebar sticky">
-    <p>{{ item }}
-    <ul>
-    {% for item in site.support %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-    {% endfor %}
-    </ul>
-</div>
-{% endif %}
 
-{% if page.sidebar_type == "about" %}
-  <div class="sidebar sticky">
-    <ul>
-    {% for item in site.about %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+{% capture list %}
+    {% for item in site.support %}
+    {{ item.title }}|{{ item.url }}{% if forloop.last %}^{% endif %}
     {% endfor %}
-    </ul>
+{% endcapture %}
+{% assign navigation = list | split: "^" %}
+
+{% for nav_item in site.data.navigation[page.sidebar.nav] %}
+    <h4>{{ nav_item }}</h4>
+    <p>{{ nav_item[0] }}</p>
+    <p>{{ nav_item[1] }}</p>
+    <p>{{ nav_item[2] }}</p>
+    <p>{{ nav_item[3] }}</p>
+
+{% endfor %}
+
+<div class="sidebar sticky">
+  <p>{{ item }}
+  <ul>
+  {% for item in site.support %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+  {% endfor %}
+  </ul>
 </div>
+
 {% endif %}
