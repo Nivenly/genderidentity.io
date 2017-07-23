@@ -37,13 +37,11 @@ It’s a website. We may provide:
 
  1. Ensure you have [docker](https://www.docker.com/community-edition) installed.
 
- 2. Run the following make command to launch the server
-
-        make server
+ 2. Run `make` to build the whole thing and launch the server
 
  3. Open up the following URL in a browser
 
         http://localhost:80
 
- 4. To exit send `^C` `SIGINT` or press `ctl c` to the process
+ 4. To exit go `docker ps` to find the docker id and then `docker stop [id]`
 
