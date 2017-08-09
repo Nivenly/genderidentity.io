@@ -33,7 +33,7 @@ It’s a website. We may provide:
 
 ##### Read more [here](docs/about.md)
 
-## Run the site locally
+## Run the site locally (FIXME(justbaileym))
 
  1. Ensure you have [docker](https://www.docker.com/community-edition) installed.
 
@@ -45,7 +45,7 @@ It’s a website. We may provide:
 
  4. To exit go `docker ps` to find the docker id and then `docker stop [id]`
 
-## Database Setup
+## Database Setup (FIXME(justbaileym))
 
 It looks like you chose to set up your application using a postgres database! Fantastic!
 
@@ -66,7 +66,11 @@ Buffalo ships with a command that will watch your application and automatically 
 
 	$ buffalo dev
 
-If you point your browser to [http://127.0.0.1:3000](http://127.0.0.1:3000) you should see a "Welcome to Buffalo!" page.
+We've also set this up to run hugo as well. We've still gotta make it
+serve all hugo stuff directly from disk, because at the moment Hugo
+renders HTML files with the wrong base URL.
+
+If you point your browser to [http://127.0.0.1:3000](http://127.0.0.1:3000) you should see our site homepage.
 
 **Congratulations!** You now have your Buffalo application up and running.
 
