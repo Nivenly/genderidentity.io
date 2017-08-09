@@ -56,8 +56,7 @@ func App() *buffalo.App {
 
 		// This URL is the default route on buffalo, let's move it out of the way for now
 		app.GET("/routes", HomeHandler)
-		app.ServeFiles("/assets", packr.NewBox("../public/assets"))
-		app.ServeFiles("/", packr.NewBox("../hugo/public"))
+		app.ServeFiles("/", packr.NewBox("../public"))
 	}
 
 	return app
