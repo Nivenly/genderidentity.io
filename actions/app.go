@@ -4,13 +4,13 @@ import (
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/buffalo/middleware"
 
-	"github.com/nivenly/genderidentity/models"
-
 	"github.com/gobuffalo/envy"
 
 	"github.com/gobuffalo/buffalo/middleware/csrf"
 	"github.com/gobuffalo/buffalo/middleware/i18n"
 	"github.com/gobuffalo/packr"
+
+	"github.com/nivenly/genderidentity/models"
 )
 
 // ENV is used to help switch settings based on where the
@@ -54,13 +54,10 @@ func App() *buffalo.App {
 		}
 		app.Use(T.Middleware())
 
+		// This URL is the default route on buffalo, let's move it out of the way for now
 		app.GET("/routes", HomeHandler)
-
 		app.ServeFiles("/assets", packr.NewBox("../public/assets"))
-
-		postResource := PostsResource{&buffalo.BaseResource{}}
-		app.Resource("/posts", postResource)
-		app.GET("/", postResource.List)
+		app.ServeFiles("/", packr.NewBox("../hugo/public"))
 	}
 
 	return app
