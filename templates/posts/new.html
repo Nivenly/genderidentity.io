@@ -1,0 +1,16 @@
+<h1>New Post</h1>
+
+<%= if (errors) { %>
+<div class="alert alert-danger">
+    <%= for (k, v) in errors { %>
+    <%= v %>
+    <% } %>
+</div>
+<% } %>
+
+<%= form_for(post, {action: "/posts"}) { %>
+<%= f.InputTag("Title") %>
+<%= f.TextArea("Description", {rows: 10}) %>
+
+<button class="btn btn-success">Save</button>
+<% } %>

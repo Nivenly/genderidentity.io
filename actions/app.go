@@ -54,9 +54,13 @@ func App() *buffalo.App {
 		}
 		app.Use(T.Middleware())
 
-		app.GET("/", HomeHandler)
+		app.GET("/routes", HomeHandler)
 
 		app.ServeFiles("/assets", packr.NewBox("../public/assets"))
+
+		postResource := PostsResource{&buffalo.BaseResource{}}
+		app.Resource("/posts", postResource)
+		app.GET("/", postResource.List)
 	}
 
 	return app

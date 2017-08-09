@@ -1,0 +1,9 @@
+<li id="post-<%= post.ID %>">
+    <h2>
+        <%= post.Title %>
+    </h2>
+    <%= post.Description %>
+    <%= if (post.Description) { %>
+    <%= markdown post.Description.String %>
+    <% } %>
+</li>
