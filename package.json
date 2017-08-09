@@ -1,8 +1,9 @@
 {
-  "name": "site",
+  "name": "genderidentity.io",
   "version": "1.0.0",
+  "description": "The best transgender support site ever.",
   "main": "index.js",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "babel-cli": "~6.24.1",
     "babel-core": "~6.25.0",
@@ -25,5 +26,17 @@
     "uglifyjs-webpack-plugin": "~0.4.6",
     "url-loader": "~0.5.9",
     "webpack": "~2.3.0"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kris-nova/genderidentity.io.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/kris-nova/genderidentity.io/issues"
+  },
+  "homepage": "https://github.com/kris-nova/genderidentity.io#readme"
 }
