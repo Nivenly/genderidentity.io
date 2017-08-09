@@ -1,0 +1,3 @@
+[submodule "hugo/themes/hugo-universal-theme"]
+	path = hugo/themes/hugo-universal-theme
+	url = git@github.com:devcows/hugo-universal-theme.git
