@@ -14,8 +14,7 @@ import (
 
 func runHugo() {
 	// We'll use ping as it will provide output and we can control how long it runs.
-	os.Chdir("./hugo")
-	cmd := exec.Command("hugo", "server", "--renderToDisk")
+	cmd := exec.Command("hugo", "-s", "hugo/", "-d", "../public", "-w")
 
 	// Use a bytes.Buffer to get the output
 	var buf bytes.Buffer
