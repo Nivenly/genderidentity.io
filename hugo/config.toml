@@ -1,4 +1,5 @@
-baseurl = "/"
+baseURL = "http://localhost/"
+canonifyURLs = true
 title = "Universal"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
