@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+<main>
+  <div>
+   <h1>{{ .Title }}</h1>
+        <ul>
+        <!-- Renders the li.html content view for each content/post/*.md -->
+            {{ range .Data.Pages }}
+                {{ .Render "list"}}
+            {{ end }}
+        </ul>
+  </div>
+</main>
+{{ partial "footer.html" . }}

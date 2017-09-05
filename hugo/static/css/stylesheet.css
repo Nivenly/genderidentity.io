@@ -1,0 +1,181 @@
+
+/* orange, blue, dark blue
+   ed4c37, 0061c3, 2a2a69 */
+
+   .sidebar h6 {
+    margin-bottom: 1.5rem;
+}
+
+.social-media h6 {
+    margin-bottom: 0rem;
+}
+
+.sidebar {
+    margin-right: 2rem;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #ed4c37;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #fdfefe;
+}
+
+.social-media a:visited,
+.social-media a:link,
+.sidebar a:visited,
+.sidebar a:link,
+.blog a:visited,
+.blog a:link,
+.articles a:visited,
+.articles a:link {
+    color: #292b2c;
+    text-decoration: none;
+}
+
+.social-media a:hover,
+.sidebar a:hover,
+nav li a:hover,
+.blog a:hover,
+.articles a:hover,
+footer a:hover {
+    color: #ed4c37;
+}
+
+.carousel-caption {
+    background-color:rgba(0, 0, 0, 0.5); 
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.carousel-caption a:hover {
+    /* color: #ed4c37; */
+    /* This doesn't work. Why? */
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: block;
+}
+
+h4 {
+    font-family: Bitter;
+}
+
+h1 {
+        margin-bottom: 2rem;
+        font-family: Bitter;
+}
+
+h5 {
+        margin-bottom: 1rem;
+        font-family: Bitter;
+        font-weight: bold;
+        margin-top: 2rem;
+}
+
+.card {
+    border: 0;
+}
+
+footer .card {
+     background-color: rgba(0,0,0,0);
+    font-size: 0.9rem;
+}
+
+.card-text {
+    margin-bottom: 0.75rem;
+}
+
+.card-block {
+    padding-right: 0;
+    padding-left: 0; 
+}
+
+footer .card-group {
+    background-color: rgba(0,0,0,0.1);
+    padding: 0.75rem;
+}
+
+.author-section {
+    background-color: rgba(0,0,0,0.1);
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.author-section p {
+    padding: 0rem;
+    margin: 0;
+    margin-top: 0.75rem;
+    font-family: Rubik;
+}
+
+.author-section h6 {
+    padding: 0rem;
+    margin: 0;
+    font-weight: normal;
+}
+
+.author-section .col-4 {
+    padding: 0rem;
+}
+
+.author-section .align-self-center {
+    padding: 0.75rem;
+}
+
+footer .card-block {
+     padding-right: 0.75rem;
+    padding-left: 0.75rem; 
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+footer .card {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+.carousel, section {
+    margin-bottom: 3rem;
+}
+
+h6 {
+    margin-bottom: 1.5rem;
+}
+
+.align-items-flex-end {
+    align-items: flex-end;
+    align-content: space-between;
+}
+
+hr {
+    padding: 0;
+    line-height: 0;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+nav img {
+    height: 4rem;
+}
+
+nav li,
+h6 {
+    text-transform: uppercase;
+    font-family: Rubik;
+    font-weight: bold;
+}
+
+nav li {
+    padding-right: 1.5rem;
+}

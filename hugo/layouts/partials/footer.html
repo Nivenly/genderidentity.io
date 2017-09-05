@@ -1,0 +1,76 @@
+<!-- 
+ .d888                  888                    
+d88P"                   888                    
+888                     888                    
+888888 .d88b.   .d88b.  888888 .d88b.  888d888 
+888   d88""88b d88""88b 888   d8P  Y8b 888P"   
+888   888  888 888  888 888   88888888 888     
+888   Y88..88P Y88..88P Y88b. Y8b.     888     
+888    "Y88P"   "Y88P"   "Y888 "Y8888  888
+ -->
+ <footer>
+        <div class="card-group">
+          <div class="card">
+            <div class="card-block">
+              <h6 class="card-title">About</h6>
+
+              {{ $a1 := where .Site.Pages "Section" "about" }}
+              {{ $a2 := where .Site.Pages "Kind" "page" }}
+              {{ $a3 := $a1 | intersect $a2 }}
+              {{ range $a3.ByTitle }}
+              <p class="card-text"><a href="{{ .URL }}">{{ .Title }}</a></p>
+              {{ end }}
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-block">
+              <h6 class="card-title">Resources</h6>
+              <p class="card-text"><a href="https://www.reddit.com/r/traaaaaaannnnnnnnnns/">r/traaaaaaannnnnnnnnns</a></p>
+              <p class="card-text"><a href="http://transhealth.ucsf.edu">UCSF Trans Health</a></p>
+              <p class="card-text"><a href="https://twitter.com/catsu">Internet Cats</a></p>
+              <p class="card-text"><a href="https://twitter.com/Kris__Nova/status/904819170067398656">Go Pizza</a></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-block">
+              <h6 class="card-title">Subscribe</h6>
+              <p class="card-text">We'd love to sell all your info to the NSA but they already have it :(</p>
+  
+              <div class="row">
+                <div class="col">
+                  <div class="input-group">
+                    <input class="form-control form-control-sm" placeholder="" type="text">
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary btn-sm" type="button">
+                        <i aria-hidden="true" class="fa fa-envelope-o"></i>
+                      </button>
+                  </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-block">
+              <h6 class="card-title">Support</h6>
+              {{ $a1 := where .Site.Pages "Section" "support" }}
+              {{ $a2 := where .Site.Pages "Kind" "page" }}
+              {{ $a3 := $a1 | intersect $a2 }}
+              {{ range $a3.ByTitle }}
+              <p class="card-text"><a href="{{ .URL }}">{{ .Title }}</a></p>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        <div class="card py-1" style="background-color: rgba(0,0,0,0.1);">
+          <div class="card-block py-1">
+            <p class="card-text text-center text-muted copyright">Copyright © 2017 - You ctrl+c we sue you to death.</p>
+          </div>
+        </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"></script>

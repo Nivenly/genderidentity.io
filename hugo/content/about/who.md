@@ -1,0 +1,12 @@
+---
+title: "Who"
+date: 2017-09-01T20:59:00-03:00
+draft: false
+featured_image: /img/featured/07.jpg
+---
+
+Stare at ceiling light scratch leg; meow for can opener to feed me so decide to want nothing to do with my owner today and curl into a furry donut and touch water with paw then recoil in horror slap owner's face at 5am until human fills food dish. This human feeds me, i should be a god claws in your leg sleep in the bathroom sink. Groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked you call this cat food eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap playing with balls of wool or purr when being pet. Catch mouse and gave it as a present meoooow, loved it, hated it, loved it, hated it, and scratch the postman wake up lick paw wake up owner meow meow run in circles hack up furballs kitty loves pigs.
+
+Why must they do that my slave human didn't give me any food so i pooped on the floor. Plays league of legends when in doubt, wash and chew iPad power cord stare out the window but with tail in the air. Mew sun bathe stare at the wall, play with food and get confused by dust but spill litter box, scratch at owner, destroy all furniture, especially couch thinking longingly about tuna brine, for sleep in the bathroom sink. Caticus cuteicus pet right here, no not there, here, no fool, right here that other cat smells funny you should really give me all the treats because i smell the best and omg you finally got the right spot and i love you right now lick yarn hanging out of own butt. 
+
+Kitty loves pigs my slave human didn't give me any food so i pooped on the floor. Purr for no reason meow all night having their mate disturbing sleeping humans. Present belly, scratch hand when stroked catch mouse and gave it as a present so annoy owner until he gives you food say meow repeatedly until belly rubs, feels good hate dog. Pee in the shoe stare at the wall, play with food and get confused by dust meow meow intrigued by the shower inspect anything brought into the house. 
