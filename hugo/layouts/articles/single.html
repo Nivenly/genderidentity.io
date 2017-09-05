@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+  <body>
+    <div class="container">
+      {{ partial "header.html" . }}
+
+               <!-- 
+         d8b      888          888                       
+         Y8P      888          888                       
+                  888          888                       
+.d8888b  888  .d88888  .d88b.  88888b.   8888b.  888d888 
+88K      888 d88" 888 d8P  Y8b 888 "88b     "88b 888P"   
+"Y8888b. 888 888  888 88888888 888  888 .d888888 888     
+     X88 888 Y88b 888 Y8b.     888 d88P 888  888 888     
+ 88888P' 888  "Y88888  "Y8888  88888P"  "Y888888 888     
+                                                         
+                                                         
+                                                          -->
+
+<div class="row">
+        <div class="col-sm-4">
+            <div class="sidebar mb-5">
+            <h6>Articles</h6>
+            {{ $a1 := where .Site.Pages "Section" "articles" }}
+            {{ $a2 := where .Site.Pages "Kind" "page" }}
+            {{ $a3 := $a1 | intersect $a2 }}
+            {{ $a4 := $a3.ByDate }}
+            {{ range first 10 $a4.Reverse }}
+                <a href="{{ .URL }}"><p>{{ .Title }}</a></p>
+            {{ end }}
+        </div>
+        <div class="sidebar mb-5">
+            <h6>Stories</h6>
+            {{ $s1 := where .Site.Pages "Section" "stories" }}
+            {{ $s2 := where .Site.Pages "Kind" "page" }}
+            {{ $s3 := $s1 | intersect $s2 }}
+            {{ $s4 := $s3.ByDate }}
+            {{ range first 10 $s4.Reverse }}
+                <a href="{{ .URL }}"><p>{{ .Title }}</a></p>
+            {{ end }}
+        </div>
+    </div>
+
+      <!-- 
+                           888    
+                           888    
+                           888    
+88888b.   .d88b.  .d8888b  888888 
+888 "88b d88""88b 88K      888    
+888  888 888  888 "Y8888b. 888    
+888 d88P Y88..88P      X88 Y88b.  
+88888P"   "Y88P"   88888P'  "Y888 
+888                               
+888                               
+888                               
+ -->
+
+ <div class="col-sm-8">
+        <figure class="figure">
+  <img src="{{ .Params.featured_image }}" class="img-fluid" alt="{{ .Title }}">
+
+   <figcaption class="figure-caption text-left"><small><i>Image copyright 2007 ® Fancy Photographer</i></small></figcaption>
+</figure>
+        <h1>{{ .Title }}</h1>
+{{ .Content }}
+        
+        <p class="figure-caption text-left"><i>Originally posted on {{ .Date.Format "January 2, 2006" }}.</i></p>
+
+        {{ if (not (isset .Params "author")) | or (eq .Params.author "") }}
+        {{ "" }}
+        {{ else }}
+
+{{ $who := .Params.author }}
+{{ $authors := where .Site.Pages "Section" "authors" }}
+{{ range $authors }}
+    {{ if (eq $who .Title) }}
+        
+        
+        
+        
+
+
+        <div class="row author-section">
+            <div class="col-4 col-lg-2">
+                  <img src="{{ .Params.mugshot }}" class="img-fluid" alt="{{ .Params.fullname }}">
+                  </div>
+                <div class="col align-self-center">
+        <a href="{{ .Params.link }}"><h6>{{ .Params.fullname }}</h6></a>
+        <p><small>{{ .Content }}</small></p>
+       </div></div>
+    {{ end }}
+{{ end }}
+{{ end }}
+
+               <div class="social-media mt-4">
+            <h6 class="text-center">Share it:</h6>
+        <p class="text-center" style="font-size: 2rem;">
+<a href=""><i aria-hidden="true" class="fa fa-google-plus-square"></i></a> 
+<a href=""><i aria-hidden="true" class="fa fa-facebook-square"></i></a> 
+<a href=""><i aria-hidden="true" class="fa fa-twitter-square"></i></a> 
+<a href=""><i aria-hidden="true" class="fa fa-instagram"></i></a> 
+<a href=""><i aria-hidden="true" class="fa fa-linkedin-square"></i></a> 
+<a href=""><i aria-hidden="true" class="fa fa-share-square-o"></i></a>
+</p>
+</div>
+
+
+             <hr>
+
+        <p>Comments</p>
+        <p>Comments</p>
+        <p>Comments</p>
+        <p>Comments</p>
+        <p>Comments</p>
+        <p>Comments</p>
+        <p>Comments</p>
+        <p>Comments</p>
+        <p>Comments</p>
+        <p>Comments</p>
+        <hr>
+    </div>
+</div>
+
+
+      {{ partial "footer.html" . }}
+    </div>
+  </body>
+</html>
+

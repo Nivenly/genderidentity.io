@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="articles">
+        <h6>Articles</h6>
+        <div class="row">
+            {{ $a1 := where .Site.Pages "Section" "articles" }}
+            {{ $a2 := where .Site.Pages "Kind" "page" }}
+            {{ $a3 := $a1 | intersect $a2 }}
+            {{ $a4 := $a3.ByDate }}
+            {{ range $a4.Reverse }}
+            <div class="col-sm-4">
+              <a href="{{ .URL }}">
+                <div class="card">
+                  <img alt="{{ .Title }}" class="card-img-top img-fluid" src="{{ .Params.featured_image }}">
+                  <div class="card-block">
+                    <h4 class="card-title">{{ .Title }}</h4>
+                    <p class="card-text">{{ .Summary }}</p>
+                      <p class="card-text"><small class="text-muted">{{ .Date.Format "January 2, 2006" }}</small></p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            {{ end }}
+        </div>
+      </section>
+{{ end }}
